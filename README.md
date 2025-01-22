@@ -20,7 +20,8 @@ Refer to [1, 2] for detailed explanations.
 
 ## Usage
 * **Step 0: Generate Vector Field Data**  
-Use `PIVlab`, an open-source MATLAB tool [4], to generate vector field data by Particle Image Velocimetry (PIV). You can apply PIVlab to a sample movies `input/Color-Cregion-WT3.mpg`. In the output, you have `input/PIVlab.mat` including variables: (x, y, u_filtered, v_filtered).
+Use `PIVlab`, an open-source MATLAB tool [4], to generate vector field data by Particle Image Velocimetry (PIV). You can apply PIVlab to a sample movies `input/Color-Cregion-WT3.mpg`.
+In the output, you have `input/PIVlab.mat` that includes variables (x, y, u_filtered, v_filtered).
 
 * **Step 1: Generate Cell IDs and Tracking Data**  
 Run `Main_step1.m` to create cell IDs and their tracking data. This script processes the skeletonized image `input/Skeleton-Cregion-WT3.tif` and the PIV data `input/PIVlab.mat`. Upon completion, it outputs `pos_link_step1.mat`.  
